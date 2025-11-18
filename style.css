@@ -1,0 +1,113 @@
+body {
+      margin: 0;
+      overflow: hidden;
+      background: linear-gradient(to bottom, #1e1e2f, #2a2a3f);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+    #game {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+    #ball {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #00ffcc;
+      position: absolute;
+      left: 50px;
+      top: 50%;
+      box-shadow: 0 0 10px #00ffcc;
+      transition: background 0.3s;
+    }
+    .obstacle {
+      width: 40px;
+      height: 150px;
+      background: #ff3366;
+      position: absolute;
+      right: 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff3366;
+    }
+
+    .obstacle-pair {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 80px;
+    }
+    .obstacle-part {
+      position: absolute;
+      width: 80px;
+      background: linear-gradient(180deg, #ff3366, #ff7a9b);
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff3366;
+    }
+    .obstacle-part.top {
+      top: 0;
+    }
+    .obstacle-part.bottom {
+      bottom: 0;
+    }
+    #score {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 20px;
+    }
+    #menu {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      text-align: center;
+      background: rgba(0,0,0,0.7);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    #menu button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background: #00ffcc;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #gameOver {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 32px;
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+      text-align: center;
+    }
+    #hud {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    #hud button {
+      margin-left: 6px;
+      padding: 6px 12px;
+      font-size: 14px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #restart {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00ffcc;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
