@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+    <div id="menu">
+      <h2>Bem-vindo ao Salta-Bola!</h2>
+      <p>Clique para inverter a gravidade e evitar os obstáculos.</p>
+      <button onclick="startGame()">Jogar</button>
+    </div>
+    <div id="ball"></div>
+    <div id="score">Score: 0 | Recorde: 0</div>
+    <div id="hud">
+      <button id="mute">Música: On</button>
+      <button id="controls">Controles: Flip</button>
+    </div>
+    <div id="gameOver">
+      Game Over!<br>
+      <button id="restart">Recomeçar</button>
+    </div>
+  </div>
+
+  <!-- Sons -->
+  <audio id="clickSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
+  <audio id="pointSound" src="https://www.soundjay.com/button/sounds/button-10.mp3"></audio>
+  <audio id="crashSound" src="https://www.soundjay.com/button/sounds/button-3.mp3"></audio>
+  <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-funkyelement.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
